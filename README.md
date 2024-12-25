@@ -56,7 +56,9 @@ NEXT_PUBLIC_API_BASE_URL=http://localhost:3000
 Replace:
 
 <username>: Your MongoDB username.
+
 <password>: Your MongoDB password.
+
 <dbname>: Your MongoDB database name.
 
 ### 4. Run the Development Server
@@ -104,13 +106,16 @@ Visit the "Favorites" page to view and manage saved recipes.
 
 🛡️ API Endpoints
 Favorites API
-GET /api/favorites: Fetch all saved favorite recipes.
+GET /api/favorites: Fetch all saved favorite recipes
+
 POST /api/favorites: Save a new favorite recipe.
+
 DELETE /api/favorites: Delete a favorite recipe.
 
 🌍 Deployment
 
 Steps to Deploy:
+
 1. Install the Vercel CLI:
 ```bash   
 npm install -g vercel
@@ -122,13 +127,16 @@ vercel
 📖 References
 
 Next.js Documentation
+
 MongoDB Atlas Documentation
+
 TheMealDB API Documentation
 
 🖥️ Screenshots
 
 Home Page:
 
+https://github.com/M0hamedsh0aib/recipe_viewer/blob/main/Assets/home%201.bmp
 
 📝 License
 
