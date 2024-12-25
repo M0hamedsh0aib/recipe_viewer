@@ -1,40 +1,130 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Recipe Viewer with Favorites
 
-## Getting Started
+A **Next.js** application that allows users to browse recipes, view details, and save their favorite recipes. The app uses **TheMealDB API** for recipe data and **MongoDB Atlas** to store user favorites.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
+- **View Recipes**: Browse a list of recipes with images and names.
+- **Recipe Details**: Click on a recipe to see its ingredients, instructions, and image.
+- **Save Favorites**: Mark recipes as "favorites" and store them in a database.
+- **Favorites Page**: View and manage all your saved favorite recipes.
+- **Responsive Design**: Works seamlessly on phones, tablets, and desktops.
+
+---
+
+## 🚀 Tech Stack
+
+- **Frontend**: [Next.js](https://nextjs.org/), [React](https://reactjs.org/)
+- **Styling**: Tailwind CSS
+- **Backend**: Next.js API Routes
+- **Database**: [MongoDB Atlas](https://www.mongodb.com/atlas/database)
+- **External API**: [TheMealDB API](https://www.themealdb.com/)
+
+---
+
+## 🛠️ Getting Started
+
+Follow these steps to set up the project locally:
+
+### Prerequisites
+
+- **Node.js**: Install from [Node.js Official Website](https://nodejs.org/)
+- **MongoDB Atlas**: Create an account at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+
+---
+
+### 1. Clone the Repository
+
+git clone https://github.com/your-username/recipe-viewer.git
+cd recipe-viewer
+
+### 2. Install Dependencies
+
+npm install
+
+### Set Up Environment Variables
+
+Create a .env.local file in the root of the project
+
+Add the following environment variables to .env.local
+MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority
+NEXT_PUBLIC_API_BASE_URL=http://localhost:3000
+
+Replace:
+
+<username>: Your MongoDB username.
+<password>: Your MongoDB password.
+<dbname>: Your MongoDB database name.
+
+### Run the Development Server
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📂 Project Structure
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+recipe-viewer/
+├── .env.local                # Environment variables
+├── .gitignore                # Ignored files for Git
+├── node_modules/             # Installed dependencies
+├── package.json              # Project metadata and scripts
+├── public/                   # Static assets
+│   └── favicon.ico           # App icon
+├── src/                      # Source files
+│   ├── pages/                # Next.js pages
+│   │   ├── api/              # Backend API routes
+│   │   │   ├── favorites.js  # API to manage favorite recipes
+│   │   │   └── test.js       # Test MongoDB connection
+│   │   ├── favorites.js      # Favorites page
+│   │   └── index.js          # Home page (recipes list)
+│   ├── components/           # Reusable components
+│   │   ├── Header.js         # Navigation bar
+│   │   ├── RecipeCard.js     # Recipe display card
+│   │   └── RecipeList.js     # Grid of recipe cards
+│   ├── styles/               # Global and component-specific styles
+│   │   └── globals.css       # Global styles
+│   ├── utils/                # Utility functions
+│   │   └── dbConnect.js      # MongoDB connection utility
+│   └── models/               # Database models
+│       └── FavoriteRecipe.js # Mongoose schema for favorites
+├── README.md                 # Documentation
+└── vercel.json               # Vercel deployment config
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+🧩 Usage
+1. View Recipes
+Visit the homepage to see a list of recipes fetched from TheMealDB API.
+2. Recipe Details
+Click on a recipe to view its detailed information, including ingredients, instructions, and an image.
+3. Save Favorites
+Mark recipes as "favorites" to store them in the database.
+4. Manage Favorites
+Visit the "Favorites" page to view and manage saved recipes.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+🛡️ API Endpoints
+Favorites API
+GET /api/favorites: Fetch all saved favorite recipes.
+POST /api/favorites: Save a new favorite recipe.
+DELETE /api/favorites: Delete a favorite recipe.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🌍 Deployment
 
-## Learn More
+Steps to Deploy:
+1. Install the Vercel CLI:
+npm install -g vercel
+2. Deploy the app:
+vercel
 
-To learn more about Next.js, take a look at the following resources:
+📖 References
+Next.js Documentation
+MongoDB Atlas Documentation
+TheMealDB API Documentation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+🖥️ Screenshots
+Home Page:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+📝 License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+✨ Author
+Mohamed Shoaib
+GitHub
+LinkedIn
