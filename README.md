@@ -67,32 +67,7 @@ npm run dev
 ```
 📂 Project Structure
 
-recipe-viewer/
-├── .env.local                # Environment variables
-├── .gitignore                # Ignored files for Git
-├── node_modules/             # Installed dependencies
-├── package.json              # Project metadata and scripts
-├── public/                   # Static assets
-│   └── favicon.ico           # App icon
-├── src/                      # Source files
-│   ├── pages/                # Next.js pages
-│   │   ├── api/              # Backend API routes
-│   │   │   ├── favorites.js  # API to manage favorite recipes
-│   │   │   └── test.js       # Test MongoDB connection
-│   │   ├── favorites.js      # Favorites page
-│   │   └── index.js          # Home page (recipes list)
-│   ├── components/           # Reusable components
-│   │   ├── Header.js         # Navigation bar
-│   │   ├── RecipeCard.js     # Recipe display card
-│   │   └── RecipeList.js     # Grid of recipe cards
-│   ├── styles/               # Global and component-specific styles
-│   │   └── globals.css       # Global styles
-│   ├── utils/                # Utility functions
-│   │   └── dbConnect.js      # MongoDB connection utility
-│   └── models/               # Database models
-│       └── FavoriteRecipe.js # Mongoose schema for favorites
-├── README.md                 # Documentation
-└── vercel.json               # Vercel deployment config
+![structure](https://github.com/M0hamedsh0aib/recipe_viewer/blob/main/Assets/structure.bmp)   
 
 🧩 Usage
 1. View Recipes
@@ -137,7 +112,7 @@ TheMealDB API Documentation
 Home Page:
 
 ![home1](https://github.com/M0hamedsh0aib/recipe_viewer/blob/main/Assets/home%201.bmp)
-![home2](https://github.com/M0hamedsh0aib/recipe_viewer/blob/main/Assets/home%201.bmp)
+![home2](https://github.com/M0hamedsh0aib/recipe_viewer/blob/main/Assets/home%202.bmp)
 
 📝 License
 
@@ -147,6 +122,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Mohamed Shoaib
 
-GitHub
+![LinkedIn](https://www.linkedin.com/in/mohamed-shoaib31/)
 
-LinkedIn
