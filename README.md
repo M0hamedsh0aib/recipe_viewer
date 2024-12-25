@@ -34,20 +34,23 @@ Follow these steps to set up the project locally:
 ---
 
 ### 1. Clone the Repository
-
+```bash
 git clone https://github.com/your-username/recipe-viewer.git
+```
 cd recipe-viewer
 
 ### 2. Install Dependencies
-
+```bash
 npm install
-
-### Set Up Environment Variables
+```
+### 3. Set Up Environment Variables
 
 Create a .env.local file in the root of the project
 
 Add the following environment variables to .env.local
+
 MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<dbname>?retryWrites=true&w=majority
+
 NEXT_PUBLIC_API_BASE_URL=http://localhost:3000
 
 Replace:
@@ -56,10 +59,10 @@ Replace:
 <password>: Your MongoDB password.
 <dbname>: Your MongoDB database name.
 
-### Run the Development Server
-
+### 4. Run the Development Server
+```bash
 npm run dev
-
+```
 📂 Project Structure
 
 recipe-viewer/
@@ -109,22 +112,32 @@ DELETE /api/favorites: Delete a favorite recipe.
 
 Steps to Deploy:
 1. Install the Vercel CLI:
+```bash   
 npm install -g vercel
+```
 2. Deploy the app:
+```
 vercel
-
+```
 📖 References
+
 Next.js Documentation
 MongoDB Atlas Documentation
 TheMealDB API Documentation
 
 🖥️ Screenshots
+
 Home Page:
 
+
 📝 License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ✨ Author
+
 Mohamed Shoaib
+
 GitHub
+
 LinkedIn
